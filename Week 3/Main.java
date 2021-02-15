@@ -6,13 +6,12 @@ import java.lang.System;
 import java.util.Scanner;
 class Main {
     public static void main(String[] args){
+        //Inisiasi Program
         Scanner input=new Scanner(System.in);
         Casio real_casio=new Casio();
         CasioKW fake_casio=new CasioKW();
         String kata=input.nextLine();
-        String[] baris=new String[100];
-        int[] jumlah=new int[100];
-        int banyak=0;
+        //Membaca Kondisi Sesuai Input Pemain
         while(!kata.equals("END")){
             if (kata.equals("CHECK_BATTERY")){
                 System.out.println("Battery Casio: "+real_casio.checkBattery());
