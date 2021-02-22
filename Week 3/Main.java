@@ -6,7 +6,7 @@ import java.lang.System;
 import java.util.Scanner;
 class Main {
     public static void main(String[] args){
-        //Inisiasi Program
+        //Inisiasi Program  
         Scanner input=new Scanner(System.in);
         Casio real_casio=new Casio();
         CasioKW fake_casio=new CasioKW();
