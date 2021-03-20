@@ -1,5 +1,5 @@
 # Praktikum-OOP-STI-19
-Feel free to share it or use it as a reference! 
+Feel free to share it or use it as a reference! \n
 Week 1: Introduction to Java
 Week 2: Inheritance
 Week 3: Interface
