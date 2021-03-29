@@ -5,3 +5,5 @@ Week 2: Inheritance.
 Week 3: Interface. 
 Week 4: Polymorphism. 
 Week 5: Number and String Methode. 
+Week 6: Interrupt(Too many bugs, don't use it).
+Week 7: Concurrency.
