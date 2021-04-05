@@ -7,3 +7,4 @@ Week 4: Polymorphism.
 Week 5: Number and String Methode. 
 Week 6: Interrupt(Too many bugs, don't use it).
 Week 7: Concurrency.
+Week 8: Inner class&Collections.
