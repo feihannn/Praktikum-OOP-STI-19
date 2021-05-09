@@ -1,34 +1,24 @@
 public class Employee {
-    private int work=0;
-    private int sallary=0;
+    private int gaji;
+    private int jumlah_kerja=0;
     public void compensate(int compensation){
-       try{
-        this.work=compensation/100;
-        if (this.work==0){
-            throw new UnderpaidException(100-compensation);
+        this.gaji+=compensation;
+    }
+    public void work() throws UnpaidException,UnderpaidException,BurnoutException{ 
+        if(gaji==0){
+            throw new UnpaidException();
         }
-        else if(this.work>10){
+        if(jumlah_kerja==10){
             throw new BurnoutException();
         }
-        else{
-            this.sallary+=compensation;
+        if(gaji<(1+jumlah_kerja)*100){
+            int sisa=this.gaji-(this.jumlah_kerja*100);
+            throw new UnderpaidException(sisa);
         }
-       }catch(UnderpaidException|BurnoutException e){
-           System.out.println(e.getMessage());
-       }
-        
-    }
-    public void work(){
-       try{
-           if (this.sallary==0){
-               throw new UnpaidException();
-           }
-        }catch(UnpaidException e){
-            System.out.println(e.getMessage());
-        }
+        this.jumlah_kerja++;
     }
     public void nextDay(){
-       this.sallary=0;
-       this.work=0;
+        this.jumlah_kerja=0;
+        this.gaji=0;
     }
 }
