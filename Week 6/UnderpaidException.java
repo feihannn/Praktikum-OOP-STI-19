@@ -1,10 +1,8 @@
-//Marcelino Feihan
-//18219006
 public class UnderpaidException extends Exception{
     private int deficit;
-    public UnderpaidException(int angka){
+    public UnderpaidException(int deficit){
         super();
-        this.deficit=angka;
+        this.deficit=deficit;
     }
     public String getErrorMessage(){
         return "Bayarnya kurang "+this.deficit+" nih, istri saya 6 :(";

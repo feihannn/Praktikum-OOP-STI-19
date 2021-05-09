@@ -1,7 +1,6 @@
-//Marcelino Feihan
-//18219006
-class BurnoutException extends Exception{
+public class BurnoutException extends Exception{
     public BurnoutException(){
+        super();
     }
     public String getErrorMessage(){
         return "Cape bro kerja mulu";
